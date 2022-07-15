@@ -1,0 +1,11 @@
+SELECT count(Employee_Name),Position FROM HRDataset_v14
+WHERE Position='Production Technician I';
+
+SELECT count(EmpID),Sex FROM HRDataset_v14
+WHERE GenderID='1';
+
+SELECT Employee_Name FROM HRDataset_v14
+WHERE ManagerName='Michael Albert';
+
+SELECT Employee_Name,EmploymentStatus FROM HRDataset_v14
+WHERE EmploymentStatus='Active';
