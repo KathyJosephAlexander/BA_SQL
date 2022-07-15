@@ -1,0 +1,17 @@
+SELECT total(Tax) FROM COMPANY
+WHERE City="Yangon";
+
+SELECT sum(Quantity) FROM COMPANY
+WHERE City="Yangon" or City="Mandalay";
+
+SELECT max(gross_margin_percentage),Branch,InvoiceID FROM COMPANY;
+
+SELECT max(gross_margin_percentage),Gender FROM COMPANY;
+
+SELECT max(gross_iincome),Customertype FROM COMPANY
+
+SELECT InvoiceID,min(gross_iincome) FROM COMPANY
+
+SELECT Rating,Unitprice,max(Gender) FROM COMPANY
+
+SELECT max(Rating),Branch,City FROM COMPANY
