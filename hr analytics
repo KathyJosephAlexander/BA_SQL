@@ -9,3 +9,39 @@ WHERE ManagerName='Michael Albert';
 
 SELECT Employee_Name,EmploymentStatus FROM HRDataset_v14
 WHERE EmploymentStatus='Active';
+
+SELECT Employee_Name,EmploymentStatus,MaritalDesc FROM HRDataset_v14
+WHERE EmploymentStatus='Active' AND MaritalDesc='Married';
+
+SELECT Employee_Name,EmploymentStatus,Salary FROM HRDataset_v14
+WHERE EmploymentStatus='Active' AND Salary<=60000;
+
+SELECT Employee_Name,Position,max(EngagementSurvey) FROM HRDataset_v14
+WHERE Position='Production Technician II';
+ORDER BY DESC Engagement Survey; 
+
+SELECT Position,max(Salary) FROM HRDataset_v14;
+
+SELECT Employee_Name, Salary FROM HRDataset_v14;
+WHERE Salary>=69020.6848874598;
+
+SELECT Employee_Name,Salary,EmpSatisfaction FROM HRDataset_v14
+WHERE Salary<=69020.6848874598 AND EmpSatisfaction='1';
+
+SELECT count(Employee_Name),PerfScoreID FROM HRDataset_v14
+WHERE PerfScoreID>3;
+
+SELECT count(Employee_Name),EmpStatusID FROM HRDataset_v14
+WHERE EmpStatusID='5';
+
+SELECT count(Department),Department FROM HRDataset_v14
+WHERE Department='IT/IS';
+
+SELECT count(Department) FROM HRDataset_v14;
+WHERE Department='Software Engineering';
+
+SELECT count(Department) FROM HRDataset_v14;
+WHERE Department='Admin Offices';
+
+SELECT EmpID,PerfScoreID FROM HRDataset_v14
+ORDER BY PerfScoreID;
